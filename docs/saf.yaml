@@ -3,11 +3,11 @@
 #
 scope:
   scopetag: mve # identifier that curators have determined for this terminology
-  scopedir: https://github.com/tno-terminology-design/tev2-minimal-viable-example/tree/master/docs # URL of the scope-directory
+  scopedir: https://github.com/tno-terminology-design/tev2-mve/tree/master/docs # URL of the scope-directory
   curatedir: terms # directory where all curated files are located. Full URL is `scopedir`/`curatedir`
-  glossarydir: machine-readable-glossaries # directory where all MRGs are located. Full URL is `scopedir`/`glossarydir`
+  glossarydir: mrgs # directory where all MRGs are located. Full URL is `scopedir`/`glossarydir`
   defaultvsn: terms # vsntag that identifies the default terminology. MRG is located at `scopedir`/`glossarydir`/mrg.mve.yaml
-  website: https://tno-terminology-design.github.io/tev2-minimal-viable-example/docs # base URL for creating links to rendered versions of Curated Texts. It should also serve as the home page of the terminology.
+  website: https://tno-terminology-design.github.io/tev2-mve/docs # base URL for creating links to rendered versions of Curated Texts. It should also serve as the home page of the terminology.
   navpath: /terms # Path to the directory where Curated Texts are rendered. What `curatedir` is for Curated Texts is, `navpath` is for the rendered versions of Curated Texts.
   navid: id # Name of the field in the front matter of a body file used by your static site generator in a URL, to uniquely identify that file (e.g., "id", "slug", "permalink"). If not specified, the filename of the body file will be used. | 
 #
