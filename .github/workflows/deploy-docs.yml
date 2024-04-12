@@ -53,10 +53,10 @@ jobs:
     - name: Run terminology tools
       run: |
         cd docs
-        mrg-import -c terminology-config.yaml
-        mrgt       -c terminology-config.yaml
-        hrgt -f    -c terminology-config.yaml
-        trrt -f    -c terminology-config.yaml
+        mrg-import -c tev2-config.yaml
+        mrgt       -c tev2-config.yaml
+        hrgt -f    -c tev2-config.yaml
+        trrt -f    -c tev2-config.yaml
 
 # Uncomment and modify this if you need to commit changes made by the terminology tools
 #   - name: Commit MRGs to repository
