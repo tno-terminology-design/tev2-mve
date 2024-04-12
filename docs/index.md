@@ -90,7 +90,7 @@ to its [terms](@tev2)), are actually available.
 You can skip this step if there are no such [terminologies](@tev2).
 
 As this file makes extensive use of the [terms](@tev2) defined by TEv2,
-we need to import its (default) [MRG](@). You can do that by executing
+we need to import its (default) [MRG](@tev2). You can do that by executing
 the following command from within the directory that contains `saf.yaml`
 
 ~~~ cmd
