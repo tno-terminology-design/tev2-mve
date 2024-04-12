@@ -71,15 +71,18 @@ jobs:
       with:
         python-version: '3.x'  # Ensure this matches the Python version you need for MkDocs
 
-    # MkDocs installation
+    - name: List files in the repository root
+      run: ls -la
+ 
+   # MkDocs installation
     - name: Install MkDocs and extensions
       run: |
         python -m pip install --upgrade pip
         pip install mkdocs mkdocs-material  # Optionally add any specific MkDocs plugins you require
 
-    # MkDocs build process
     - name: Build the MkDocs site
       run: mkdocs build  # Builds the static site from Markdown files
+      working-directory: ${{github.workspace}}  # Ensures mkdocs builds from the root directory
 
     # GitHub Pages setup
     - name: Setup Pages
