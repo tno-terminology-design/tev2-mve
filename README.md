@@ -5,3 +5,5 @@ that can be further processed using TEv2 terminology tools.
 
 A description of all this, and instructions of how you can test this
 using the TEv2 tools is given in [`/docs/doc-1.md`](/docs/doc-1.md).
+
+The site is at https://tno-terminology-design/tev2-mve
