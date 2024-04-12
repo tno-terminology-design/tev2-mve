@@ -11,10 +11,22 @@ scope:
   navpath: /terms # Path to the directory where Curated Texts are rendered. What `curatedir` is for Curated Texts is, `navpath` is for the rendered versions of Curated Texts.
   navid: id # Name of the field in the front matter of a body file used by your static site generator in a URL, to uniquely identify that file (e.g., "id", "slug", "permalink"). If not specified, the filename of the body file will be used. | 
 #
+# The `scopes` section contains a mapping between scopetags that are used within the scope, and the associated scopedirs.
+# This enables tools to find the SAF of these scopes, and from there all other directories, files etc.
+# that live within them, e.g. to use/import their data.
+#
+scopes:  #
+- scopetag: tev2
+  scopedir: https://github.com/tno-terminology-design/tev2-specifications/tree/master/docs # URL of the scope-directory
+#
 # The `versions` section specifies the terminologies that are actively maintained by the curators.
 # For each (version of such a) terminology, instructions are given that say which terms are to be included.
 #
 versions:
 - vsntag: terms # this version contains all terms that are curated within this scope
   termselection:
-  - "*" # import all terms that are curated within the current scope
+  - "*" # include all terms that are curated within the current scope
+# - vsntag: documentation # this version contains all terms we use to refer to in this site
+#   termselection:
+#   - "*"@tev2" # include all terms of the default TEv2 terminology
+#   - "*"       # include all terms that are curated within the current scope

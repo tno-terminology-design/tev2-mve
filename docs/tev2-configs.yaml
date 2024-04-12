@@ -1,20 +1,20 @@
 # TNO Terminology Design tools configuration file (yaml)
 
 ## General
-scopedir: .         # URL of the scope directory (where the SAF is located)
-onNotExist: warn    # Action in case something doesn't exist
-output: output-docs # (root) directory for output files to be written to
+scopedir: .          # URL of the scope directory (where the SAF is located)
+onNotExist: warn     # Action in case something doesn't exist
+output: tev2-outputs # (root) directory for output files to be written to
 
 ## Machine Readable Glossary Tool
 mrgt:
-  vsntag:           # versiontag of MRG to generate. Default: all MRGs
+  vsntag:            # versiontag of MRG to generate. Default: all MRGs
 
 ## Human Readable Glossary Tool
 hrgt:
   interpreter: default           # `default` (default), or regex
   converter: markdown-section-2  # style in which glossary entries are to be rendered
   input:                         # glob pattern for files to be processed
-    - "glossary.md"
+    - "*.md"
 
 ## Term Reference Resolution Tool
 trrt:
