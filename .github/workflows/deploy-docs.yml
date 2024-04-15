@@ -45,6 +45,7 @@ jobs:
       with:
         node-version: 16
 
+# <TEv2 specific steps start here>
     # TEv2 Tool installation
     - name: Install terminology tools globally
       run: npm install -g @tno-terminology-design/trrt @tno-terminology-design/hrgt @tno-terminology-design/mrgt @tno-terminology-design/mrg-import
@@ -58,12 +59,13 @@ jobs:
         hrgt -f    -c tev2-config.yaml
         trrt -f    -c tev2-config.yaml
 
-    # Uncomment and modify this if you need to commit changes made by the terminology tools
-    #   - name: Commit MRGs to repository
-    #     uses: stefanzweifel/git-auto-commit-action@v5
-    #     with:
-    #       commit_message: Update MRGs
-    #       file_pattern: 'docs/glossaries/mrg.mve*.yaml'
+    # Commit generated MRGs to repo, so other projects can use (import) them
+    - name: Commit MRGs to repository
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Update MRGs
+        file_pattern: 'docs/glossaries/mrg.mve*.yaml'
+# <TEv2 specific steps end here>
 
     # Setting up Python, as this is needed to build the MkDocs site
     - name: Set up Python
@@ -71,10 +73,7 @@ jobs:
       with:
         python-version: '3.x'  # Ensure this matches the Python version you need for MkDocs
 
-    - name: List files in the repository root
-      run: ls -la
- 
-   # MkDocs installation
+    # MkDocs installation
     - name: Install MkDocs and extensions
       run: |
         python -m pip install --upgrade pip
