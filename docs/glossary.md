@@ -1,5 +1,5 @@
 ---
-id: glossary
+title: "MVE Glossary"
 ---
 
 # Glossary

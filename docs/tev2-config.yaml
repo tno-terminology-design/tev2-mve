@@ -11,14 +11,12 @@ mrgt:
 
 ## Human Readable Glossary Tool
 hrgt:
-  interpreter: default           # `default` (default), or regex
   converter: markdown-section-2  # style in which glossary entries are to be rendered
   input:                         # glob pattern for files to be processed
     - "*.md"
 
 ## Term Reference Resolution Tool
 trrt:
-  interpreter: default           # `default`, `alt`, or regex
-  converter: html-hovertext-link # `markdown-link`, `html-link`, `html-hovertext-link`, `html-glossarytext-link`, mustache/handlebars template
+  converter: html-hovertext-link # style in which TermRefs are to be rendered
   input:                         # glob pattern for files to be processed
     - "**/*.md"
