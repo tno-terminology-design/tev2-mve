@@ -1,7 +1,7 @@
 ---
-id: "MVE Glossary"
+title: "MVE Glossary"
 ---
 
-{% hrg="" %}
+# MVE Glossary
 
-Apenbroodboom
+{% hrg="" %}
