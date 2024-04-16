@@ -6,7 +6,7 @@ terminology:
   defaultvsn: "terms"
   website: "https://tno-terminology-design.github.io/tev2-mve/docs"
   navpath: "/terms"
-  navid: "id"
+  navid: null
   defaulttype: "concept"
   vsntag: "terms"
 scopes: []
