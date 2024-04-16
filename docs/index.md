@@ -132,12 +132,10 @@ A typical workflow would consist of the following steps:
    The result of this is that every so-called [TermRef](@tev2)
    that is found in any of the processed files, will be replaced 
    with a [renderable ref](@tev2).
-   In our case, this means it will be replaced such that the text:
- 
-   - will be highlighed (enhanced);
-   - will be a link to the file that provides further documentation;
-   - will show a popup containing its definition.
+   In our case, this means it will be replaced such that the text will
+   be highlighed (enhanced), will link to the file that provides further
+   documentation, and will show a popup containing its definition.
 
-    In our case, a term such as [TermRef](@tev) is an imported term,
-    whereas [MVE](@) is one defined by ourselves. 
-    You can see how they are highlighed, are clickable, and show popups.
+   In our case, a term such as [TermRef](@tev) is an imported term,
+   whereas [MVE](@) is one defined by ourselves. 
+   You can see how they are highlighed, are clickable, and show popups.
