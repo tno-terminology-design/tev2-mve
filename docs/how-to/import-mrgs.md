@@ -14,10 +14,10 @@ imported, and subsequently importing all [MRGs](@tev2) that have been
 generated within that [scope](@tev2).
 
 The result is that the [MRGs](@tev2) of such [scopes](@tev2) are retrieved
-and put in the same directory where [MRGs](@) are generated.
+and put in the same directory where [MRGs](@tev2) are generated.
 For our situation, that is `/docs/mrgs`.
 
-As our [MVE](@) extensively uses [terms](@tev2) defined in the [scope](@)
+As our [MVE](@) extensively uses [terms](@tev2) defined in the [scope](@tev2)
 that we call `tev2` (which is located in the
 [TEv2 Specifications repo](https://github.com/tno-terminology-design/tev2-specifications)),
 we need to import its [MRGs].
@@ -45,9 +45,9 @@ mrg-import -c "tev2-config.yaml"
   is documented in the [HRGT documentation](hrgt#calling-the-tool@tev2).
 
 3. **The directory in which the MRGs are created** is the one as specified
-   in the [SAF](@). In our case, this is `/docs/mrgs`.
+   in the [SAF](@tev2). In our case, this is `/docs/mrgs`.
    This directory will be created if it doesn't yet exist.
-   If this directory already contains an [MRG](@) with the same name(s),
+   If this directory already contains an [MRG](@tev2) with the same name(s),
    they will be overwritten with the imported contents.
 
 4. **Additional documentation on the MRG Importer** can be found in its 

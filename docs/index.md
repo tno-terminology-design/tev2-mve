@@ -31,9 +31,9 @@ You can create one for yourself by follwing the descriptions in the
 The [TEv2 tools](@tev2) can be used:
 
 - within the context of a local repo (on your own computer).
-  This requires them to be [installed locally](/docs/install-tev2-tools-locally.md).
+  This requires them to be [installed locally](how-to/install-tev2-tools-locally.md).
 - within the context of the GitHub Actions that create the static Pages website.
-  This requires [some steps to be added](adding-tev2-tools-to-actions-script.md) 
+  This requires [some steps to be added](how-to/add-tev2-tools-to-actions-script.md) 
   to the GitHub Actions workflow that you use to generate the static Pages website.
 
 ## 1.2. TEv2 Files and Directories
@@ -136,6 +136,6 @@ A typical workflow would consist of the following steps:
    be highlighed (enhanced), will link to the file that provides further
    documentation, and will show a popup containing its definition.
 
-   In our case, a term such as [TermRef](@tev) is an imported term,
+   In our case, a term such as [TermRef](@tev2) is an imported term,
    whereas [MVE](@) is one defined by ourselves. 
    You can see how they are highlighed, are clickable, and show popups.

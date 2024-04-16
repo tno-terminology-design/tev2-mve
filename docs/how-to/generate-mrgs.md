@@ -42,9 +42,9 @@ mrgt -c "tev2-config.yaml"
   is documented in the [HRGT documentation](hrgt#calling-the-tool@tev2).
 
 3. **The directory in which the MRGs are created** is the one as specified
-   in the [SAF](@). In our case, this is `/docs/mrgs`.
+   in the [SAF](@tev2). In our case, this is `/docs/mrgs`.
    This directory will be created if it doesn't yet exist.
-   If this directory already contains an [MRG](@) with the same name(s),
+   If this directory already contains an [MRG](@tev2) with the same name(s),
    they will be overwritten with the newly generated contents.
 
 4. **Additional documentation on the MRGT** can be found in its 

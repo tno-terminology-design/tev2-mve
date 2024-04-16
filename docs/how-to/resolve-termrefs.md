@@ -11,7 +11,7 @@ Typically, such characteristcs are that they stand out from the adjacent texts,
 that they can be clicked on to navigate to the page where they are documented,
 and that they have a popup text that specifies their definitions.
 
-What a particular [renderable ref](@) would actually look like can be 
+What a particular [renderable ref](@tev2) would actually look like can be 
 customized by creating and using so-called [converters](@tev2).
 
 ~~~ bash

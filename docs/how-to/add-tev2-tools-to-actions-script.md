@@ -126,8 +126,6 @@ of this [scope](@tev2)). Other [mrgs](@tev2) that might exist would be imported.
 
 - `terms` (directory) contains files with [curated texts](@tev2), i.e., 
 markdown texts that document the terminology defined within this [scope](@tev2). 
-These are `term-1.md`, which documents [first term](@) and `term-2.md`, 
-which documents [second term](@).
 
 - `index.md` file (this file).
 

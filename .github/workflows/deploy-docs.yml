@@ -64,7 +64,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Update MRGs
-        file_pattern: 'docs/glossaries/mrg.mve*.yaml'
+        file_pattern: 'docs/mrgs/mrg.mve*.yaml'
 # <TEv2 specific steps end here>
 
     # Setting up Python, as this is needed to build the MkDocs site

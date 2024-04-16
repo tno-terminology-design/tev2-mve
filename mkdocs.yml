@@ -3,7 +3,17 @@ site_url: https://tno-terminology-design.github.io/tev2-mve/
 theme: material
 nav:
   - Home: index.md
-  - Prerequisites: prerequisites.md
+  - How To Install TEv2:
+    - Locally: how-to/install-tev2-tools-locally.md
+    - In GitHub Actions: how-to/add-tev2-tools-to-actions-script.md
+  - How To Manage:
+    - The SAF: how-to/saf.md
+    - Config files: how-to/config-files.md
+  - How To Run Tools:
+    - Generate HRG: how-to/generate-hrgs.md
+    - Generate MRGs: how-to/generate-mrgs.md
+    - Import MRGs from elsewhere: how-to/import-mrgs.md
+    - Resolve TermRefs: how-to/resolve-termrefs.md
   - Glossary: glossary.md
 
 # Assuming your Markdown files are directly in the /docs folder
