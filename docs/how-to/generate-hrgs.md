@@ -5,11 +5,11 @@ title: Generate Glossaries
 # How To Generate (Human Readable) Glossaries
 
 The generation of [human readable glossaries](@tev2) consists of
-finding [MRGRef](tev2) markers in a file, and
+finding [MRGRef](@tev2) markers in a file, and
 replacing them with a chunk of characters that,
 when rendered, typically list the definitions of the [terms](@tev2)
 as specified in the one particular [machine readable glossary](@tev2)
-that is specified in the [MRGRef](tev2).
+that is specified in the [MRGRef](@tev2).
 
 What a particular [entry in the glossary](hrg-entry@tev2) would actually look
 like can be customized by creating and using so-called [converters](@tev2).

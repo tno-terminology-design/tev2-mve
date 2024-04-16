@@ -5,7 +5,7 @@ title: Generate MRGs
 # How To Generate (Machine Readable) Glossaries
 
 The generation of [machine readable glossaries (MRGs)](mrg@tev2) consists of
-finding the specifications of the [terminologies](tev2) for which such 
+finding the specifications of the [terminologies](@tev2) for which such 
 [MRGs](@tev2) are to be created, and then generate them.
 
 This results in the generated [MRGs](@tev2) to become available in the
