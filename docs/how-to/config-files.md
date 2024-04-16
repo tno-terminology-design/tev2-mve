@@ -63,7 +63,7 @@ For example,
 # Notes
 
 1. **Converters determine what the output of a tool looks like**.
-   Each tool that uses [converters](@) comes with a set of predefined ones.
+   Each tool that uses [converters](@tev2) comes with a set of predefined ones.
    So there are [TRRT converters](trrt#predefined-converters@tev2) and also
    [HRGT converters](hrgt#predefined-converters). 
    [Converters](@tev2) can be customized, both [for the TRRT](trrt#converter-customization)
