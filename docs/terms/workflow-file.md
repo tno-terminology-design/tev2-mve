@@ -33,7 +33,7 @@ on:
     branches: ["main"]
 
 permissions:
-  contents: read
+  contents: write # this is needed for step "Commit MRGs to repository" to work
   pages: write
   id-token: write
 
