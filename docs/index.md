@@ -1,132 +1,143 @@
 ---
-id: index
+Title: TEv2 MVE
 ---
 
-# Minimum Viable Example - Explainer
+# 1. TEv2 Minimal Viable Example (using Github Pages/Jekyll)
 
-This is an example of a documentation file. In this case, it explains how the
-[TEv2 tools](@tev2) can be used to process the files in this Minimal Viable Example (MVE).
+The [repo from which this website has been generated](https://github.com/tno-terminology-design/tev2-mve) is a [minimal viable example (MVE)](mve@) that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its effects, which are:
 
-## File/Directory Structure
+- highlighting of the [terms](@tev2) that it uses.
+  Basically, this boils down to converting so-called [TermRefs](@tev2)
+  to emphasized texts that have popups showing the definition of the
+  [terms](@tev2) that are referenced.
 
-The `docs` directory is the root directory in which TEv2 works (the reason for
-this is that it contains the [Scope Administration File](saf@tev2) (`saf.yaml`)
-for the MVE scope). This directory is constructed as follows:
+- creation of a [glossary](hrg@tev2) for the [terms](@tev2)
+  that are defined within the scope of the repo.
+
+So, this repo contains the documentation that tells you 
+'[How to use TEv2 in a Github Pages/Jekyll context](https://tno-terminology-design.github.io/tev2-mve)'.
+Thus, this site documents itself.
+
+## 1.1. Installation of TEv2 Tools
+
+[TEv2 tools](@tev2) are typically deployed in a context where it is clear how
+the documentation is going to be rendered and presented to users.
+So, the first prerequisite is that such a context exists.
+
+In this case, the context is a GitHub repo that is configured for using Pages.
+You can create one for yourself by follwing the descriptions in the 
+[GitHub Pages documentation](https://docs.github.com/en/pages).
+
+The [TEv2 tools](@tev2) can be used:
+
+- within the context of a local repo (on your own computer).
+  This requires them to be [installed locally](/docs/install-tev2-tools-locally.md).
+- within the context of the GitHub Actions that create the static Pages website.
+  This requires [some steps to be added](adding-tev2-tools-to-actions-script.md) 
+  to the GitHub Actions workflow that you use to generate the static Pages website.
+
+## 1.2. TEv2 Files and Directories
+
+Before you can actually use the tools, you must have a number of 
+directories and files in place.
+They are typically located in the same directory where you maintain
+the files of your documentation.
+As this [MVE](@) has chosen `docs` as the directory for the documentation,
+this is also the directory where [TEv2](@tev2) directories and files will be put.
+
+Here is a breakdown of the [TEv2](@tev2) specific directories and files:
 
 ~~~
-├── mrgs
-│   ├── mrg.mve.terms.yaml
-│   └── mrg.mve.yaml
-├── terms
-│   ├── term-1.md
-│   └── term-2.md
-├── outputs
-│   └── readme.md
-├── index.md
-├── mve-glossary.md
 ├── saf.yaml
-└── tev2-configs.yaml
+├── terms
+│   ├── mve.md
+│   ├── workflow-file.md
+│   └── <etc.>
+├── mrgs
+├── glossary.md
+└── tev2-config.yaml
 ~~~
-
-- `mrgs` (directory) contains [machine readable glossaries](@tev2). They are either
-imported (by the [mrg-import](@tev2) tool), or generated (by the [mrgt](@tev2) tool). 
-The [glossaries](@tev2) generated within this scope are `mrg.mve.terms.yaml` 
-(the [mrg](@tev2) of [terms](@tev2) that are defined within this scope) and
-`mrg.mve.yaml` (the [mrg](@tev2) that holds the default [terminology](@tev2) 
-of this [scope](@tev2)). Other [mrgs](@tev2) that might exist would be imported.
-
-- `terms` (directory) contains files with [curated texts](@tev2), i.e., 
-markdown texts that document the terminology defined within this [scope](@tev2). 
-These are `term-1.md`, which documents [first term](@) and `term-2.md`, 
-which documents [second term](@).
-
-- `index.md` file (this file).
-
-- `mve-glossary.md` is a markdown file that contains a [marker](mrg-ref@tev2)
-that the [hrgt tool](hrgt@tev2) converts into a [human readable glossary](@tev2)
-of the [terms](@tev2) that are defined in this [scope](@tev2).
 
 - `saf.yaml` is the [scope administration file](saf@tev2).
+  It provides a centralized record of the resources in the documentation context,
+  facilitating their access by the various [TEv2 tools](@tev2).
+  Its contents [must be provided by the user](how-to/saf.md).
+  Its name may not be changed.
 
-- `tev2-configs.yaml` is a [TEv2 configuration file](@tev2) that holds 
-configurations for the [TEv2 tools](@tev2).
+- `terms` is a directory that contains files with [curated texts](@tev2), i.e., 
+  markdown files that document the terminology defined within this [scope](@tev2). 
+  Its name MUST match the content of the field `curatedir` in the file [`saf.yaml`](saf@tev2).
+  This directory, and the files it contains, must be created by users.
+  To illustrate this, the figure above shows two such files.
 
-## Working with TEv2 tools
+- `mrgs` is a directory that contains [machine readable glossaries](@tev2). 
+  Its name matches the content of the field `glossarydir` in the file
+  [`saf.yaml`](saf@tev2).
+  This directory is automatically generated by the tools.
+  Users should not touch it, nor its contents, unless they know what they are doing.
+  
+- `glossary.md` is a markdown file that we have created to show how a
+  [glossary](hrg@tev2) can be defined, simply by putting a [marker](mrg-ref@tev2)
+  in such a file. 
+  The [hrgt tool](hrgt@tev2) will convert such markers in the [glossary](@tev2) 
+  of the [terms](@tev2) whose descriptions are in the `terms` directory.
 
-The purpose of this site is to provide you with an initial setup that enables you to run the tools by yourselves, so that you can see what they do.
+- `tev2-configs.yaml` is a [TEv2 configuration file](@tev2).
+  It is recommended to give it a name that allows you to immediately see that
+  it is a [TEv2 configuration file](@tev2).
+  Its contents [must be provided and maintained by the user](how-to/config-files.md). Its name can be anything.
 
-**We assume that all commands are run from the directory that contains the file `saf.yaml`**
+## 1.3. Running the TEv2 tools
 
-You can do this as follows:
+The [TEv2 tools](@tev2) can be run 
 
-### Step 0: Make sure the tools become available
+- **as part of a GitHub workflow**.
+  This requires that you have [added the TEv2 steps to the workflow file](how-to/add-tev2-tools-to-actions-script.md).
+  The tools will be called as is specified in this [workflow file](@).
+  In this repo, they will be called whenever a commit or push is done
+  to the `main` branch of the repo.
 
-You can do this by installing npm (the node packet manager) on your machine, and subsequently making all tools available, as follows:
+- **locally, i.e. on a local copy of the repo**. 
+  In this case, you must have [installed the tools locally](how-to/install-tev2-tools-locally.md), and verified that you can run them
+  within the `docs` directory.
 
-~~~ cmd
-npm install -g @tno-terminology-design/mrg-import
-npm install -g @tno-terminology-design/mrgt
-npm install -g @tno-terminology-design/hrgt
-npm install -g @tno-terminology-design/trrt
-~~~
+A typical workflow would consist of the following steps:
 
-You can verify they are available by
+1. If the documentation relies on [terminologies](@tev2) 
+   that are [curated](@tev2) elsewhere, the first step consist of
+   **[importing glossaries from elsewhere](how-to/import-mrgs.md)**. 
+   The result of this is that such glossaries are then imported,
+   and stored in the directory as specified in the [SAF](@tev2),
+   which in our case would be `/docs/mrgs`.
+   If such isn't the case, this step can be skipped.
 
-1. going to the directory that contains `saf.yaml`, and then
-2. executing the following command(s) from within that directory:
+2. The next step consists of 
+   **[generating one's own (machine readable) glossaries](how-to/generate-mrgs.md)**. 
+   The resulting [MRGs](@tev2) are stored in the same directory as the
+   imported [MRGs](@tev2), as specified in the [SAF](@tev2).
+   For this [MVE](@) that would be `/docs/mrgs`.
 
-~~~ cmd
-<toolname> --version
-~~~
+3. The documentation may have been set up to include one or more
+   [glossaries](hrg@tev2).
+   If this is the case, the next step is to
+   **[generate the (human readable) glossaries](how-to/generate-hrgs.md)**.
+   The result of this is every so-called [MRGRef](@tev2) marker
+   that is found in any of the processed files, will be replaced
+   with a [(human readable) glossary](hrg@tev2).
+   The [MVE glossary](glossary.md) shows the result of this step for this [MVE](@).
 
-(where `<toolname>` is `mrg-import`, `mrgt`, `hrgt`, or `trrt`).
+4. The documentation would contain so-called [TermRefs](@tev2).
+   **[Resolving such TermRefs](how-to/resolve-termrefs.md)**
+   is the final step that needs to take place.
+   The result of this is that every so-called [TermRef](@tev2)
+   that is found in any of the processed files, will be replaced 
+   with a [renderable ref](@tev2).
+   In our case, this means it will be replaced such that the text:
+ 
+   - will be highlighed (enhanced);
+   - will be a link to the file that provides further documentation;
+   - will show a popup containing its definition.
 
-### Step 1: importing MRGs
-
-The first step consists of ensuring that [terminologies](@tev2) that are
-defined elsewhere, and that you rely on to be available (e.g., as you refer
-to its [terms](@tev2)), are actually available.
-
-You can skip this step if there are no such [terminologies](@tev2).
-
-As this file makes extensive use of the [terms](@tev2) defined by TEv2,
-we need to import its (default) [MRG](@tev2). You can do that by executing
-the following command from within the directory that contains `saf.yaml`
-
-~~~ cmd
-mrg-import -c "tev2-configs.yaml"
-~~~
-
-This will add various files in the `mrgs` directory, called `mrg.tev2*.yaml`.
-You can discard all, except `mrg.tev2.yaml`, but you can also leave them
-where they are, as they are not in the way.
-
-### Step 2: generating Machine Readable Glossaries (MRGs)
-
-In the second step, we will generate [machine readable glossaries](@tev2)
-for the [terminologies](@tev2) that are defined in the [saf](@tev2).
-You can do that by executing the following command:
-
-~~~ cmd
-mrgt -c "tev2-configs.yaml"
-~~~
-
-This adds another two [MRGs](@tev2) to the `mrgs` directory:
-
-- `mrg.mve.terms.yaml` holds the [MRG](@tev2) that contains all [terms](@tev2)
-that are defined in our MVE-[scope](@tev2).
-- `mrg.mve.yaml` holds the [MRG](@tev2) that contains all [terms](@tev2)
-in the default [terminology](@tev2) of our MVE-[scope](@tev2).
-
-It so happens that these files have the same contents.
-
-### Step 3: generating Human Readable Glossaries (HRGs)
-
-Next, we can generate the [human readable glossaries](@tev2).
-
-You can do that by executing the following command:
-
-~~~ cmd
-hrgt -c "tev2-configs.yaml"
-~~~
-
+    In our case, a term such as [TermRef](@tev) is an imported term,
+    whereas [MVE](@) is one defined by ourselves. 
+    You can see how they are highlighed, are clickable, and show popups.
