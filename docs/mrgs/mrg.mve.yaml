@@ -4,7 +4,7 @@ terminology:
   curatedir: "terms"
   glossarydir: "mrgs"
   defaultvsn: "terms"
-  website: "https://tno-terminology-design.github.io/tev2-mve/docs"
+  website: "https://tno-terminology-design.github.io/tev2-mve"
   navpath: "/terms"
   navid: "term"
   defaulttype: "concept"
@@ -29,7 +29,7 @@ entries:
       - "mve-s"
     scopetag: "mve"
     locator: "mve.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-mve/docs/terms/mve"
+    navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/mve"
     headingids:
       - "minimal-viable-example-(mve)"
       - "example"
@@ -45,7 +45,7 @@ entries:
       - "workflow-file-s"
     scopetag: "mve"
     locator: "workflow-file.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-mve/docs/terms/workflow-file"
+    navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/workflow-file"
     headingids:
       - "workflow-file"
       - "example"
