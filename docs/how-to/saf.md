@@ -1,3 +1,4 @@
+
 ---
 title: SAF
 ---
@@ -9,7 +10,7 @@ A [Scope Administration File (SAF)](saf@tev2) is a
 that provides a centralized record of the resources in the documentation context
 that are needed by the various [TEv2 tools](@tev2).
 
-The directory that contains the [SAF](@) of such a context 
+The directory that contains the [SAF](@tev2) of such a context 
 (which in TEv2-parlance is called a [scope](@tev2)) 
 is called the [scopedir](@tev2) (of that [scope](@tev2)).
 It is the root relative to which all TEv2-related paths are specified.
