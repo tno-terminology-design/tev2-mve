@@ -1,7 +1,3 @@
----
-title: Config Files
----
-
 # How To Create Config Files
 
 A [TEv2 Configuration File](@tev2) is a ([YAML](https://yaml.org/spec/1.2.2/)) file 

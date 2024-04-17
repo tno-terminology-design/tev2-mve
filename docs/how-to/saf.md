@@ -1,8 +1,4 @@
 
----
-title: SAF
----
-
 # How To Create the SAF (Scope Administration File)
 
 A [Scope Administration File (SAF)](saf@tev2) is a

@@ -17,7 +17,7 @@ A **Minimal Viable Example (MVE)** is a very simple version of a GitHub repo tha
 This includes:
 
 - the actual documentation that is to be published;
-- the files needed for generating the static website (e.g., the [workflow file](@);
+- the files needed for generating the static website (e.g., the [workflow file](@));
 - any other artifacts needed by the static website generate (e.g., CSS files, plugins, etc.);
 - and, of course, the set of directories and files that [TEv2 tools](@tev2) need.
 
