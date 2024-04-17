@@ -15,10 +15,11 @@ formPhrases: [ "mimimal viable example{ss}", "mimimum viable example{ss}", "mve{
 A **Minimal Viable Example (MVE)** is a very simple version of a GitHub repo that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results.
 
 This includes:
+
 - the actual documentation that is to be published;
 - the files needed for generating the static website (e.g., the [workflow file](@);
-- any other artifacts needed by the static website generate (e.g., CSS files, plugins, etc.)
-- and, of course, the set of directories and files that [TEv2 tools](@tev2) need;
+- any other artifacts needed by the static website generate (e.g., CSS files, plugins, etc.);
+- and, of course, the set of directories and files that [TEv2 tools](@tev2) need.
 
 ## Example
 

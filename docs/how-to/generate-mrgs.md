@@ -12,7 +12,7 @@ This results in the generated [MRGs](@tev2) to become available in the
 `mrgs`-directory (as specified by the [SAF](@tev2)).
 In our case, that would be 
 
-- `mrg.mve.terms.yaml`, which holds the [MRG](@tev2) that contains all [terms](@tev2)
+- `mrg.mve.mve-terms.yaml`, which holds the [MRG](@tev2) that contains all [terms](@tev2)
 that are defined in our [MVE](@), and
 - `mrg.mve.yaml`, which holds the [MRG](@tev2) that contains all [terms](@tev2)
 in the default [terminology](@tev2) of our MVE-[scope](@tev2).

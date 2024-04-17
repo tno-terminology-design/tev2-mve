@@ -60,7 +60,7 @@ For example,
   as the value for its `converter` argument. And it will only process files that
   have the extension `.md` and that are located in the [scopedir](@tev2) itself.
 
-# Notes
+## Notes
 
 1. **Converters determine what the output of a tool looks like**.
    Each tool that uses [converters](@tev2) comes with a set of predefined ones.

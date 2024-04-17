@@ -82,11 +82,6 @@ jobs:
     - name: Build the MkDocs site
       run: mkdocs build  # Builds the static site from Markdown files
       working-directory: ${{github.workspace}}  # Ensures mkdocs builds from the root directory
-
-    - name: List generated site structure
-      run: |
-        echo "Listing the contents of the generated site directory:"
-        ls -R ./site
           
     # GitHub Pages setup
     - name: Setup Pages
