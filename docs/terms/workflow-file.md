@@ -16,7 +16,7 @@ The contents of that file follows the [workflow syntax for GitHub Actions](https
 
 You may consult [GitHub's documentation about workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) to get more backgrounds on this.
 
-# Example
+## Example
 
 Here is an example of a [workflow file](@) that can be used
 to compile and deploy the static website of an [MVE](@)
