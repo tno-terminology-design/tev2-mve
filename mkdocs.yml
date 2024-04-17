@@ -30,5 +30,5 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
 # known pygments_styles: monokai, friendly, colorful, solarized-dark, solarized-light
-      pygments_style: monokai 
+      pygments_style: solarized-dark 
   - pymdownx.extra
