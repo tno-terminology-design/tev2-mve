@@ -6,7 +6,7 @@ terminology:
   defaultvsn: "terms"
   website: "https://tno-terminology-design.github.io/tev2-mve/docs"
   navpath: "/terms"
-  navid: null
+  navid: "term"
   defaulttype: "concept"
   vsntag: "terms"
 scopes: []
@@ -29,7 +29,7 @@ entries:
       - "mve-s"
     scopetag: "mve"
     locator: "mve.md"
-    navurl: "https://tno-terminology-design.github.io/tev2-mve/docs/terms/mve"
+    navurl: "https://tno-terminology-design.github.io/tev2-mve/docs/terms/minimal-viable-example"
     headingids:
       - "minimal-viable-example-(mve)"
       - "example"
