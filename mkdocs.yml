@@ -9,6 +9,7 @@ nav:
   - How To Manage:
     - The SAF: how-to/saf.md
     - Config files: how-to/config-files.md
+    - Terms and Definitions: how-to/curated-texts.md
   - How To Run Tools:
     - Generate HRG: how-to/generate-hrgs.md
     - Generate MRGs: how-to/generate-mrgs.md
