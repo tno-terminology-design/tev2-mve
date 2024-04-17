@@ -77,7 +77,7 @@ jobs:
     - name: Install MkDocs and extensions
       run: |
         python -m pip install --upgrade pip
-        pip install mkdocs mkdocs-material  # Optionally add any specific MkDocs plugins you require
+        pip install mkdocs mkdocs-material pymdown-extensions pygments # Optionally add any specific MkDocs plugins you require
 
     - name: Build the MkDocs site
       run: mkdocs build  # Builds the static site from Markdown files
