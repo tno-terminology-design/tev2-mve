@@ -1,4 +1,8 @@
-# How To Create Config Files
+---
+title: Config Files
+---
+
+# Managing Config Files
 
 A [TEv2 Configuration File](@tev2) is a ([YAML](https://yaml.org/spec/1.2.2/)) file 
 that provides the various [TEv2 tools](@tev2) with a set of predefined parameters
@@ -15,7 +19,7 @@ the preferred (i.e., most practical) location is the [scopedir](@tev2) itself.
 Here is an example of the [TEv2 configuration file](@tev2) that is used for this [MVE](@).
 [This file](/tev2-config.yaml) is located in the [scopedir](@tev2).
 
-~~~ yaml
+```yaml
 # TEv2 configuration file (for the MVE context)
 
 ## General
@@ -38,7 +42,7 @@ trrt:
   converter: html-hovertext-link # style in which TermRefs are to be rendered
   input:                         # glob pattern for files to be processed
     - "**/*.md"
-~~~
+```
 
 All [tools](@tev2) use the fields in the beginning of the file, 
 i.e.: `scopedir`, `onNotExist` and `output`.

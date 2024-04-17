@@ -19,10 +19,10 @@ in the default [terminology](@tev2) of our MVE-[scope](@tev2).
 
 It so happens that these files have the same contents, but that need not always be the case.
 
-~~~ bash
+```bash
 # use this command in a GitHub Action or for local testing:
 mrgt -c "tev2-config.yaml"
-~~~
+```
 
 <div style="background-color: #ffffcc; padding: 15px; margin-bottom: 20px; border-left: 6px solid #ffeb3b;">
   <strong>Note:</strong> Make sure you execute this command 

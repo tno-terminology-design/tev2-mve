@@ -1,5 +1,8 @@
+---
+title: SAF
+---
 
-# How To Create the SAF (Scope Administration File)
+# Managing the Scope Administration File (SAF)
 
 A [Scope Administration File (SAF)](saf@tev2) is a
 ([YAML](https://yaml.org/spec/1.2.2/)) file 
@@ -14,7 +17,7 @@ It is the root relative to which all TEv2-related paths are specified.
 Here is an example of the [SAF](@tev2) for this [MVE](@).
 For starters, you can simply copy this text, and adjust the contents of the various fields. When you do so, please be very accurate with the values that you provide. 
 
-~~~ yaml
+```yaml
 scope:
   # Identifier that we use as a name for this scope
   scopetag: mve
@@ -66,6 +69,6 @@ versions:
   termselection:
   # include all terms that are curated within the current scope
   - "*"
-~~~
+```
 
 There is a more elaborate explanation of the [SAF](@tev2) in the [TEv2 specifications](saf@tev2).

@@ -22,7 +22,7 @@ Here is an example of a [workflow file](@) that can be used
 to compile and deploy the static website of an [MVE](@)
 that uses GitHub Pages (or Jekyll) for its deployment:
 
-~~~ yaml
+```yaml
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
@@ -112,4 +112,4 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-~~~
+```

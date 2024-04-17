@@ -21,23 +21,23 @@ Help for all this is available, e.g.:
 
 The [TEv2 tools] you need are avaiable as NPM packages. We use the [MRG import](@tev2), [MRGT](@tev2), [HRGT](@tev2) and [TRRT](@tev2), which can be installed by executing:
 
-~~~
+```
 npm install -g @tno-terminology-design/mrg-import
 npm install -g @tno-terminology-design/mrgt
 npm install -g @tno-terminology-design/hrgt
 npm install -g @tno-terminology-design/trrt
-~~~
+```
 
 You can verify that they are installed correctly by 
 making the `docs` directory your current directory,
 and then run the following commands
 
-~~~
+```
 mrg-import --version
 mrgt --version
 hrgt --version
 trrt --version
-~~~
+```
 
 all of which should return a version number. 
 In case of trouble, you may consult

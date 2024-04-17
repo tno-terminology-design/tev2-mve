@@ -25,3 +25,8 @@ site_dir: site
 # Plugins can be added here
 plugins:
   - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.extra

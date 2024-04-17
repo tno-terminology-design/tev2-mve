@@ -17,13 +17,13 @@ You can use this as an example.
 This file is a standard/minimal workflow for creating a GitHub Pages website,
 where we have inserted the following action-steps:
 
-~~~ yaml
+```yaml
     # Setting up Node, as this is needed to install the TEv2 tools
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 20
-~~~
+```
 
 In many cases, `Node.js` also needs to be set up for static site generator features.
 In such cases, something similar to the above would already exist, 
@@ -31,7 +31,7 @@ and it is not necessary to duplicate that then.
 
 The TEv2-specific part that (always) needs to be added is as follows:
 
-~~~ yaml
+```yaml
     # TEv2 Tool installation
     - name: Install terminology tools globally
       run: npm install -g @tno-terminology-design/trrt @tno-terminology-design/hrgt @tno-terminology-design/mrgt @tno-terminology-design/mrg-import
@@ -51,7 +51,7 @@ The TEv2-specific part that (always) needs to be added is as follows:
       with:
         commit_message: Update MRGs
         file_pattern: 'docs/glossaries/mrg.mve*.yaml'
-~~~
+```
 
 That's all.
 

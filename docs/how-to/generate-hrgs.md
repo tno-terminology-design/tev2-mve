@@ -14,13 +14,13 @@ that is specified in the [MRGRef](@tev2).
 What a particular [entry in the glossary](hrg-entry@tev2) would actually look
 like can be customized by creating and using so-called [converters](@tev2).
 
-~~~ bash
+```bash
 # use this command in a GitHub Action for actual deployment
 hrgt -c "tev2-config.yaml" -f
 
 # use this command for local testing
 hrgt -c "tev2-config.yaml" -o "test-output" 
-~~~
+```
 
 <div style="background-color: #ffffcc; padding: 15px; margin-bottom: 20px; border-left: 6px solid #ffeb3b;">
   <strong>Note:</strong> Make sure you execute this command 

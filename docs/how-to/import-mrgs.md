@@ -22,10 +22,10 @@ that we call `tev2` (which is located in the
 [TEv2 Specifications repo](https://github.com/tno-terminology-design/tev2-specifications)),
 we need to import its [MRGs].
 
-~~~ bash
+```bash
 # use this command in a GitHub Action or for local testing:
 mrg-import -c "tev2-config.yaml"
-~~~
+```
 
 <div style="background-color: #ffffcc; padding: 15px; margin-bottom: 20px; border-left: 6px solid #ffeb3b;">
   <strong>Note:</strong> Make sure you execute this command 

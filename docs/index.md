@@ -47,7 +47,7 @@ this is also the directory where [TEv2](@tev2) directories and files will be put
 
 Here is a breakdown of the [TEv2](@tev2) specific directories and files:
 
-~~~
+```
 ├── saf.yaml
 ├── terms
 │   ├── mve.md
@@ -56,7 +56,7 @@ Here is a breakdown of the [TEv2](@tev2) specific directories and files:
 ├── mrgs
 ├── glossary.md
 └── tev2-config.yaml
-~~~
+```
 
 - `saf.yaml` is the [scope administration file](saf@tev2).
   It provides a centralized record of the resources in the documentation context,
