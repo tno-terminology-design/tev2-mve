@@ -2,7 +2,8 @@
 # Front matter for the static site generator
 title: MVE
 # Front matter for TEv2 Curated Texts
-term: minimal-viable-example
+term: mve
+bodyFile: "/terms/mve.md"
 glossaryTerm: "Minimal Viable Example"
 glossaryAbbr: "MVE"
 glossaryText: "a GitHub repo, the contents of which is documentation that is published as a static website using GitHub Pages or Jekyll, and that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results."

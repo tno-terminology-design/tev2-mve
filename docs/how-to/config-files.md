@@ -17,7 +17,7 @@ While [configuration files](@tev2) can be located anywhere within the [scopedir]
 the preferred (i.e., most practical) location is the [scopedir](@tev2) itself.
 
 Here is an example of the [TEv2 configuration file](@tev2) that is used for this [MVE](@).
-[This file](/docs/tev2-config.yaml) is located in the [scopedir](@tev2).
+[This file](/tev2-config.yaml) is located in the [scopedir](@tev2).
 
 ~~~ yaml
 # TEv2 configuration file (for the MVE context)
@@ -65,6 +65,6 @@ For example,
 1. **Converters determine what the output of a tool looks like**.
    Each tool that uses [converters](@tev2) comes with a set of predefined ones.
    So there are [TRRT converters](trrt#predefined-converters@tev2) and also
-   [HRGT converters](hrgt#predefined-converters). 
-   [Converters](@tev2) can be customized, both [for the TRRT](trrt#converter-customization)
-   and [for the HRGT](hrgt#converter-customization).
+   [HRGT converters](hrgt#predefined-converters@). 
+   [Converters](@tev2) can be customized, both [for the TRRT](trrt#converter-customization@)
+   and [for the HRGT](hrgt#converter-customization@).
