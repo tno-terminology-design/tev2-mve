@@ -58,6 +58,7 @@ jobs:
         mrgt       -c tev2-config.yaml
         hrgt -f    -c tev2-config.yaml
         trrt -f    -c tev2-config.yaml
+        trrt -f    -c tev2-config-specup.yaml
 
     # Commit generated MRGs to repo, so other projects can use (import) them
     - name: Commit MRGs to repository
