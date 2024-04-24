@@ -1,12 +1,13 @@
 ---
 # Front matter for TEv2 Curated Texts
 term: spec-up-xref
-glossaryTerm: "XRef (Spec-Up style)"
+glossaryTerm: "External Reference (Spec-Up style)"
+glossaryAbbr: "XRef"
 glossaryText: "a construct of the form `[[xref: {title} {term}]]`, where `{title}` is a tag that identifies the source of the [[ref: definition]] that defines `{term}`."
 glossaryNotes:
 - "The `{title}` tags are defined [to be described, link to actual specs thereof]."
 - "When an XRef is processed by a [TEv2 tool](@tev2), `{title}` is treated as the equivalent of a [scopetag](@tev2) and/or the default [terminology](@tev2) in the associated [scope](@tev2)."
-formPhrases: [ "XRef{ss}", "spec-up XRef{ss}" ]
+formPhrases: [ "External Reference{ss}", "XRef{ss}", "spec-up XRef{ss}" ]
 ---
 
 # Spec-Up XRefs
