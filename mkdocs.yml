@@ -6,7 +6,7 @@ nav:
   - How To Install TEv2:
     - Locally: how-to/install-tev2-tools-locally.md
     - In GitHub Actions: how-to/add-tev2-tools-to-actions-script.md
-  - How To Manage:
+  - How To Manage Files:
     - The SAF: how-to/saf.md
     - Config files: how-to/config-files.md
     - Terms and Definitions: how-to/curated-texts.md
