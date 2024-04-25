@@ -11,9 +11,9 @@ nav:
     - Config files: how-to/config-files.md
     - Terms and Definitions: how-to/curated-texts.md
   - How To Run Tools:
-    - Generate HRG: how-to/generate-hrgs.md
-    - Generate MRGs: how-to/generate-mrgs.md
     - Import MRGs from elsewhere: how-to/import-mrgs.md
+    - Generate MRGs: how-to/generate-mrgs.md
+    - Generate HRGs: how-to/generate-hrgs.md
     - Resolve TermRefs: how-to/resolve-termrefs.md
   - How To Use Spec-Up Term References: how-to/use-spec-up-term-references.md
   - Glossary: glossary.md
