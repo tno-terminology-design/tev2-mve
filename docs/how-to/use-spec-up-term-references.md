@@ -2,7 +2,7 @@
 title: Using Spec-Up Term References
 ---
 
-# Spec-Up Term References Integration
+# How To Use Spec-Up Term References
 
 [[xref: tev2, TEv2]] allows customization of the syntax that authors use for [[xref: tev2, TermRefs]]. In this page, we show what it takes to use the syntax as [defined by Spec-Up](https://identity.foundation/spec-up/), which is a tool that aims to facilitate the writing of technical specifications aimed at standards bodies or industry groups.
 
