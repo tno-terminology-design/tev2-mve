@@ -18,9 +18,8 @@ entries:
     glossaryText: "a GitHub repo, the contents of which is documentation that is published as a static website using GitHub Pages or Jekyll, and that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results."
     formPhrases:
       - "minimal-viable-example"
-      - "mimimal-viable-example"
-      - "mimimal-viable-examples"
-      - "mimimal-viable-example-s"
+      - "minimal-viable-examples"
+      - "minimal-viable-example-s"
       - "mimimum-viable-example"
       - "mimimum-viable-examples"
       - "mimimum-viable-example-s"
