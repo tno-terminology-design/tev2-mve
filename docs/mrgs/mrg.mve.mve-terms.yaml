@@ -32,6 +32,7 @@ entries:
     headingids:
       - "minimal-viable-example-(mve)"
       - "example"
+    termType: "concept"
     termid: "concept:minimal-viable-example"
     vsntag: "mve-terms"
   - term: "spec-up-definition"
@@ -56,6 +57,7 @@ entries:
       - "how-spec-up-uses-definitions-and-term-references"
       - "tev2-does-not-use-spec-up-definitions"
       - "notes"
+    termType: "concept"
     termid: "concept:spec-up-definition"
     vsntag: "mve-terms"
   - term: "spec-up-term-reference"
@@ -83,6 +85,7 @@ entries:
     headingids:
       - "spec-up-term-references"
       - "notes"
+    termType: "concept"
     termid: "concept:spec-up-term-reference"
     vsntag: "mve-terms"
   - term: "spec-up-xref"
@@ -107,6 +110,7 @@ entries:
     navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/spec-up-xref"
     headingids:
       - "spec-up-xrefs"
+    termType: "concept"
     termid: "concept:spec-up-xref"
     vsntag: "mve-terms"
   - term: "term-1"
@@ -123,6 +127,7 @@ entries:
     headingids:
       - "term-1"
       - "notes"
+    termType: "concept"
     termid: "concept:term-1"
     vsntag: "mve-terms"
   - term: "term-2"
@@ -139,6 +144,7 @@ entries:
     headingids:
       - "term-2"
       - "notes"
+    termType: "concept"
     termid: "concept:term-2"
     vsntag: "mve-terms"
   - term: "term-3"
@@ -155,6 +161,7 @@ entries:
     headingids:
       - "term-3"
       - "notes"
+    termType: "concept"
     termid: "concept:term-3"
     vsntag: "mve-terms"
   - title: "Workflow File"
@@ -179,5 +186,6 @@ entries:
       - "you-should-copy-everything-up-to-the-comment-that-says-the-tev2-specific-steps-ends"
       - "<tev2-specific-steps-end-here>"
       - "the-stuff-below-is-what-mkdocs-needs-to-generate-the-static-site"
+    termType: "concept"
     termid: "concept:workflow-file"
     vsntag: "mve-terms"
