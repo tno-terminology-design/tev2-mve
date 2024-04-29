@@ -11,7 +11,7 @@ formPhrases: [ "minimal viable example{ss}", "mimimum viable example{ss}", "mve{
 
 # Minimal Viable Example (MVE) 
 
-A **Minimal Viable Example (MVE)** is a very simple version of a GitHub repo that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results.
+The **Minimal Viable Example (MVE)** is a very simple version of a GitHub repo that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results.
 
 This includes:
 
