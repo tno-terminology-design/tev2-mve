@@ -36,7 +36,7 @@ title: MVE
 term: mve
 glossaryTerm: "Minimal Viable Example"
 glossaryText: "a GitHub repo, the contents of which is documentation that is published as a static website using GitHub Pages or Jekyll, and that includes the minimal stuff for using the [TEv2 tools](@tev2) and demonstrating its results."
-formPhrases: [ "minimal viable example{ss}", "mimimum viable example{ss}", "mve{ss}" ]
+formPhrases: [ "minimal viable example{ss}", "minumum viable example{ss}", "mve{ss}" ]
 ```
 Let's consider the section `Front matter for TEv2 Curated Texts`
 
