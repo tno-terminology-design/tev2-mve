@@ -4,4 +4,4 @@ title: "MVE Glossary"
 
 # MVE Glossary
 
-{% hrg="" %}
+{% hrg="" sorter="{{glossaryAbbr}}{{noRefs glossaryTerm}}"%}
