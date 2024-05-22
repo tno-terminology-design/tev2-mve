@@ -1,13 +1,18 @@
 ---
-# Front matter for TEv2 Curated Texts
+# Front matter for TEv2 Curated Texts that is required
 term: spec-up-definition
+# Spec-up section
+spec-up-term: "definition"
+spec-up-aliases: [ "definitions", "spec-up definition", "spec-up definitions" ]
+spec-up-definition: "a construct of the form `[[def: {term}, {alias1}, {alias2}, ... ]] ~ {definition}`, which specifies the mapping between the term `{term}` and a description of the term's meaning (provided by `{definition}`."
+# TEv2 specific frontmatter (can be discarded if you only use Spec-Up)
+formPhrases: [ "definition{ss}", "spec-up definition{ss}" ]
 glossaryTerm: "Definition (Spec-Up style)"
 glossaryText: "a construct of the form `[[def: {term}, {alias1}, {alias2}, ... ]] ~ {definition}`, which specifies the mapping between the term `{term}` and a description of the term's meaning (provided by `{definition}`."
 glossaryNotes:
 - "`{alias1}, {alias2}, ...` is optional syntax that specifies aliases (synomyms) for `{term}`."
 - "In [TEv2](@tev2), `{term}` and its aliases would be specified as [form phrases](@tev2)."
 - "A recent addition is the use of so-called [[ref: XRefs]], which allows definitions to be used across diffrent files and projects."
-formPhrases: [ "definition{ss}", "spec-up definition{ss}" ]
 ---
 
 # Definition (Spec-Up style)

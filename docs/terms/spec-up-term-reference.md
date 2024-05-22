@@ -1,12 +1,17 @@
 ---
-# Front matter for TEv2 Curated Texts
+# Front matter for TEv2 Curated Texts that is required
 term: spec-up-term-reference
-glossaryTerm: "Term Reference (Spec-Up style)"
-glossaryText: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [[ref: Spec-Up definition]]."
+# Spec-up section
+spec-up-term: "term reference"
+spec-up-aliases: [ "term references" ]
+spec-up-definition: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [[ref: Spec-Up definition]]."
+# TEv2 specific frontmatter (can be discarded if you only use Spec-Up)
 formPhrases: [ "term reference{ss}", "spec-up term reference{ss}", "term-reference{ss}-spec-up-style", "term-reference{ss}-specup-style" ]
+glossaryTerm: "Term Reference (Spec-Up style)"
+glossaryText: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [Spec-Up definition](@)."
 glossaryNotes:
-- "In the traditional Spec-Up context, such [[ref: definitions]] would reside in the [definition list](https://github.com/decentralized-identity/spec-up/blob/master/single-file-test/spec.md#definition-lists) of the file in which the [[ref: term reference]] is used.
-- "You should use [[ref: XRefs]] to refer to terms that are defined elsewhere."
+- "In the traditional Spec-Up context, such [definitions](@) would reside in the [definition list](https://github.com/decentralized-identity/spec-up/blob/master/single-file-test/spec.md#definition-lists) of the file in which the [term reference](@) is used."
+- "You should use [XRefs](@) to refer to terms that are defined elsewhere."
 ---
 
 # Spec-Up Term References

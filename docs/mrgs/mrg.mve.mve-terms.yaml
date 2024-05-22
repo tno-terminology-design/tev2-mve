@@ -36,12 +36,12 @@ entries:
     termid: "concept:minimal-viable-example"
     vsntag: "mve-terms"
   - term: "spec-up-definition"
-    glossaryTerm: "Definition (Spec-Up style)"
-    glossaryText: "a construct of the form `[[def: {term}, {alias1}, {alias2}, ... ]] ~ {definition}`, which specifies the mapping between the term `{term}` and a description of the term's meaning (provided by `{definition}`."
-    glossaryNotes:
-      - "`{alias1}, {alias2}, ...` is optional syntax that specifies aliases (synomyms) for `{term}`."
-      - "In [TEv2](@tev2), `{term}` and its aliases would be specified as [form phrases](@tev2)."
-      - "A recent addition is the use of so-called [[ref: XRefs]], which allows definitions to be used across diffrent files and projects."
+    spec-up-term: "definition"
+    spec-up-aliases:
+      - "definitions"
+      - "spec-up definition"
+      - "spec-up definitions"
+    spec-up-definition: "a construct of the form `[[def: {term}, {alias1}, {alias2}, ... ]] ~ {definition}`, which specifies the mapping between the term `{term}` and a description of the term's meaning (provided by `{definition}`."
     formPhrases:
       - "spec-up-definition"
       - "definition"
@@ -49,6 +49,12 @@ entries:
       - "definition-s"
       - "spec-up-definitions"
       - "spec-up-definition-s"
+    glossaryTerm: "Definition (Spec-Up style)"
+    glossaryText: "a construct of the form `[[def: {term}, {alias1}, {alias2}, ... ]] ~ {definition}`, which specifies the mapping between the term `{term}` and a description of the term's meaning (provided by `{definition}`."
+    glossaryNotes:
+      - "`{alias1}, {alias2}, ...` is optional syntax that specifies aliases (synomyms) for `{term}`."
+      - "In [TEv2](@tev2), `{term}` and its aliases would be specified as [form phrases](@tev2)."
+      - "A recent addition is the use of so-called [[ref: XRefs]], which allows definitions to be used across diffrent files and projects."
     scopetag: "mve"
     locator: "spec-up-definition.md"
     navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/spec-up-definition"
@@ -61,8 +67,10 @@ entries:
     termid: "concept:spec-up-definition"
     vsntag: "mve-terms"
   - term: "spec-up-term-reference"
-    glossaryTerm: "Term Reference (Spec-Up style)"
-    glossaryText: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [[ref: Spec-Up definition]]."
+    spec-up-term: "term reference"
+    spec-up-aliases:
+      - "term references"
+    spec-up-definition: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [[ref: Spec-Up definition]]."
     formPhrases:
       - "spec-up-term-reference"
       - "term-reference"
@@ -76,9 +84,11 @@ entries:
       - "term-reference-specup-style"
       - "term-references-specup-style"
       - "term-reference-s-specup-style"
+    glossaryTerm: "Term Reference (Spec-Up style)"
+    glossaryText: "a construct of the form `[[ref: {term}]]`, where `{term}` is (an alias of some) term defined in a [Spec-Up definition](@)."
     glossaryNotes:
-      - "In the traditional Spec-Up context, such [[ref: definitions]] would reside in the [definition list](https://github.com/decentralized-identity/spec-up/blob/master/single-file-test/spec.md#definition-lists) of the file in which the [[ref: term reference]] is used. - "
-    You should use [[ref: "XRefs]] to refer to terms that are defined elsewhere.\""
+      - "In the traditional Spec-Up context, such [definitions](@) would reside in the [definition list](https://github.com/decentralized-identity/spec-up/blob/master/single-file-test/spec.md#definition-lists) of the file in which the [term reference](@) is used."
+      - "You should use [XRefs](@) to refer to terms that are defined elsewhere."
     scopetag: "mve"
     locator: "spec-up-term-reference.md"
     navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/spec-up-term-reference"
@@ -89,12 +99,12 @@ entries:
     termid: "concept:spec-up-term-reference"
     vsntag: "mve-terms"
   - term: "spec-up-xref"
-    glossaryTerm: "External Reference (Spec-Up style)"
-    glossaryAbbr: "XRef"
-    glossaryText: "a construct of the form `[[xref: {title} {term}]]`, where `{title}` is a tag that identifies the source of the definition of `{term}`."
-    glossaryNotes:
-      - "The `{title}` tags are defined [to be described, link to actual specs thereof]."
-      - "When an XRef is processed by a [TEv2 tool](@tev2), `{title}` is treated as the equivalent of a [scopetag](@tev2) and/or the default [terminology](@tev2) in the associated [scope](@tev2)."
+    spec-up-term: "xref"
+    spec-up-aliases:
+      - "xrefs"
+      - "external reference"
+      - "external references"
+    spec-up-definition: "a construct of the form `[[xref: {title} {term}]]`, where `{title}` is a tag that identifies the source of the definition of `{term}`."
     formPhrases:
       - "spec-up-xref"
       - "external-reference"
@@ -105,6 +115,12 @@ entries:
       - "xref-s"
       - "spec-up-xrefs"
       - "spec-up-xref-s"
+    glossaryTerm: "External Reference (Spec-Up style)"
+    glossaryAbbr: "XRef"
+    glossaryText: "a construct of the form `[[xref: {title} {term}]]`, where `{title}` is a tag that identifies the source of the definition of `{term}`."
+    glossaryNotes:
+      - "The `{title}` tags are defined [to be described, link to actual specs thereof]."
+      - "When an XRef is processed by a [TEv2 tool](@tev2), `{title}` is treated as the equivalent of a [scopetag](@tev2) and/or the default [terminology](@tev2) in the associated [scope](@tev2)."
     scopetag: "mve"
     locator: "spec-up-xref.md"
     navurl: "https://tno-terminology-design.github.io/tev2-mve/terms/spec-up-xref"
@@ -114,11 +130,15 @@ entries:
     termid: "concept:spec-up-xref"
     vsntag: "mve-terms"
   - term: "term-1"
-    glossaryTerm: "Term 1"
-    glossaryText: "This is the first term we will define."
+    spec-up-term: "term 1"
+    spec-up-aliases:
+      - "term one"
+    spec-up-definition: "This is the first term we will define."
     formPhrases:
       - "term-1"
       - "term-one"
+    glossaryTerm: "Term 1"
+    glossaryText: "This is the first term we will define."
     glossaryNotes:
       - "Like [[ref: Term Two]] and [[ref: Term 3]], this term is defined for illustration purposes only."
     scopetag: "mve"
@@ -131,11 +151,15 @@ entries:
     termid: "concept:term-1"
     vsntag: "mve-terms"
   - term: "term-2"
-    glossaryTerm: "Term 2"
-    glossaryText: "This is the second term, but not the last."
+    spec-up-term: "term 2"
+    spec-up-aliases:
+      - "term two"
+    spec-up-definition: "This is the second term, but not the last."
     formPhrases:
       - "term-2"
       - "term-two"
+    glossaryTerm: "Term 2"
+    glossaryText: "This is the second term, but not the last."
     glossaryNotes:
       - "Like [[ref: Term One]] and [[ref: Term 3]], this term is defined for illustration purposes only."
     scopetag: "mve"
@@ -148,11 +172,15 @@ entries:
     termid: "concept:term-2"
     vsntag: "mve-terms"
   - term: "term-3"
-    glossaryTerm: "Term 3"
-    glossaryText: "This is the last term, because you know what they say: third term's the charm!"
+    spec-up-term: "term 3"
+    spec-up-aliases:
+      - "term three"
+    spec-up-definition: "This is the last term, because you know what they say: third term's the charm!"
     formPhrases:
       - "term-3"
       - "term-three"
+    glossaryTerm: "Term 3"
+    glossaryText: "This is the last term, because you know what they say: third term's the charm!"
     glossaryNotes:
       - "Like [[ref: Term 1]] and [[ref: Term Two]], this term is defined for illustration purposes only."
     scopetag: "mve"

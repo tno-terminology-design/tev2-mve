@@ -1,9 +1,14 @@
 ---
-# Front matter for TEv2 Curated Texts
+# Front matter for TEv2 Curated Texts that is required
 term: term-2
+# Spec-up section
+spec-up-term: "term 2"
+spec-up-aliases: [ "term two" ]
+spec-up-definition: "This is the second term, but not the last."
+# TEv2 specific frontmatter (can be discarded if you only use Spec-Up)
+formPhrases: [ "Term 2", "Term Two" ]
 glossaryTerm: "Term 2"
 glossaryText: "This is the second term, but not the last."
-formPhrases: [ "Term 2", "Term Two" ]
 glossaryNotes:
 - "Like [[ref: Term One]] and [[ref: Term 3]], this term is defined for illustration purposes only."
 ---

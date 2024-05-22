@@ -15,7 +15,9 @@ nav:
     - Generate MRGs: how-to/generate-mrgs.md
     - Generate HRGs: how-to/generate-hrgs.md
     - Resolve TermRefs: how-to/resolve-termrefs.md
-  - How To Use Spec-Up Term References: how-to/use-spec-up-term-references.md
+  - Spec-Up Integration:
+    - How To Use Spec-Up Term References: how-to/use-spec-up-term-references.md
+    - Spec-Up XRef Definitions: glossary-for-spec-up.md
   - Glossary: glossary.md
   - Abbreviations: abbreviations.md
 
